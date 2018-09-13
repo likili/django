@@ -32,7 +32,9 @@
 <div class="container">
   <div class="jumbotron">
     <h1 class="display-4">Instructors!</h1>
-    <p class="lead">...</p>
+    {% for instructor in instructors_list %}
+    <p class="lead">{{ instructor.name }} {{ instructor.surname }}</p>
+    {% endfor %}
   </div>
 </div>
 <!-- Optional JavaScript -->
